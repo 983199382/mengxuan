@@ -80,6 +80,7 @@
 	<img src="img/u=2401382008,3050016061&fm=214&gp=0.jpg" alt="">
 	<audio src="uuu.mp3" controls="controls" autoplay="autoplay" loop="loop">
 	<script>
+	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
 	document.addEventListener('DOMContentLoaded', function () {
         function audioAutoPlay() {
         var audio = document.getElementById('audio');
@@ -89,6 +90,15 @@
             }, false);
         }
           audioAutoPlay();
+        });
+	
+	//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+	document.addEventListener('touchstart', function () {
+        function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        }
+        audioAutoPlay();
         });
 	</script>	
 </html>
