@@ -79,4 +79,16 @@
 	</body>
 	<img src="img/u=2401382008,3050016061&fm=214&gp=0.jpg" alt="">
 	<audio src="uuu.mp3" controls="controls" autoplay="autoplay" loop="loop">
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+            }, false);
+        }
+          audioAutoPlay();
+        });
+	</script>	
 </html>
