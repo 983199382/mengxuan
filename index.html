@@ -78,10 +78,10 @@
 		</div>
 	</body>
 	<img src="img/u=2401382008,3050016061&fm=214&gp=0.jpg" alt="">
-	<audio src="uuu.mp3" controls="controls" autoplay="autoplay" loop="loop">
+	<audio id="audio" src="uuu.mp3" controls="controls" autoplay="autoplay" loop="loop">
 	<script>
 	$(function(){
-            $("audio")[0].play(); 
+            $("#audio")[0].play(); 
         })
 	
 	//--创建页面监听，等待微信端页面加载完毕 触发音频播放
