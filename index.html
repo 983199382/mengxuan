@@ -80,6 +80,7 @@
 	<img src="img/u=2401382008,3050016061&fm=214&gp=0.jpg" alt="">
 	<audio id="audio" src="uuu.mp3" controls="controls" autoplay="autoplay" loop="loop">
 	<script>
+	//--解决html5,audio标签的autoplay="autoplay"在iphone上无法播放的问题
 	$(function(){
             $("#audio")[0].play(); 
         })
